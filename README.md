@@ -338,4 +338,4 @@ Out of scope for v1 but the natural next steps:
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE).
+MIT — see [`LICENSE`](LICENSE). Built in 2025 as a portfolio project.
