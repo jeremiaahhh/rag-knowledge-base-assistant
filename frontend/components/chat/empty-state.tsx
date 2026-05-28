@@ -1,7 +1,8 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, MessageCircleQuestion, Sparkles, Upload } from "lucide-react";
+import { ArrowRight, MessageCircleQuestion, Upload } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 
@@ -20,9 +21,15 @@ const SUGGESTIONS = [
 export function ChatEmptyState({ hasDocuments, onSuggest }: ChatEmptyStateProps) {
   return (
     <div className="flex h-full flex-col items-center justify-center px-4 py-10 text-center sm:px-8">
-      <div className="mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-primary/15 to-sky-400/15 text-primary shadow-inner ring-1 ring-primary/20">
-        <Sparkles className="h-6 w-6" />
-      </div>
+      <Image
+        src="/logo.png"
+        alt=""
+        width={56}
+        height={56}
+        priority
+        className="mb-4 h-14 w-14 rounded-2xl shadow-sm ring-1 ring-border"
+      />
+
       <h2 className="text-xl font-semibold tracking-tight">
         {hasDocuments ? "Ask your knowledge base anything" : "Your knowledge base is empty"}
       </h2>

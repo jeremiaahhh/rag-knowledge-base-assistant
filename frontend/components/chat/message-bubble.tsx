@@ -1,6 +1,7 @@
 "use client";
 
-import { Bot, User } from "lucide-react";
+import Image from "next/image";
+import { User } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
@@ -50,11 +51,21 @@ export function MessageBubble({ message }: MessageBubbleProps) {
     <div className={cn("flex items-start gap-3", isUser && "flex-row-reverse")}>
       <div
         className={cn(
-          "flex h-8 w-8 shrink-0 items-center justify-center rounded-full border bg-card text-muted-foreground shadow-sm",
+          "flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-full border bg-card text-muted-foreground shadow-sm",
           isUser ? "border-primary/30 text-primary" : "border-border",
         )}
       >
-        {isUser ? <User className="h-4 w-4" /> : <Bot className="h-4 w-4" />}
+        {isUser ? (
+          <User className="h-4 w-4" />
+        ) : (
+          <Image
+            src="/logo.png"
+            alt=""
+            width={32}
+            height={32}
+            className="h-full w-full object-cover"
+          />
+        )}
       </div>
 
       <div

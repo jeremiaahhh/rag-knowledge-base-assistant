@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { FileText, Info, Sparkles } from "lucide-react";
+import { FileText, Info, Search } from "lucide-react";
 import { toast } from "sonner";
 
 import { ChatEmptyState } from "@/components/chat/empty-state";
@@ -155,7 +155,7 @@ export default function ChatPage() {
             ) : (
               <div className="flex h-full flex-col items-center justify-center gap-2 p-8 text-center">
                 <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-muted text-muted-foreground">
-                  <Sparkles className="h-4 w-4" />
+                  <Search className="h-4 w-4" />
                 </div>
                 <div className="text-sm font-medium">No sources yet</div>
                 <div className="max-w-xs text-xs text-muted-foreground">
