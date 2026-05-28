@@ -36,7 +36,7 @@ app/
   models/          → SQLAlchemy ORM
   repositories/    → DB access
   schemas/         → Pydantic schemas
-  services/        → business logic + AI providers
+  services/        → business logic + LLM providers
   main.py          → FastAPI factory + lifespan
 tests/             → pytest suite (30 tests)
 ```

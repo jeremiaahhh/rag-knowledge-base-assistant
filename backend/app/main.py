@@ -40,7 +40,7 @@ def create_app() -> FastAPI:
         description=(
             "Retrieval-Augmented Generation assistant. Upload documents, ask "
             "questions, get answers with source citations. Includes a "
-            "mock-AI mode so the stack runs end-to-end without API keys."
+            "mock-Mode so the stack runs end-to-end without API keys."
         ),
         docs_url="/docs",
         redoc_url="/redoc",

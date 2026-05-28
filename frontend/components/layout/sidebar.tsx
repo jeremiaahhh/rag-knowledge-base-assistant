@@ -79,7 +79,7 @@ export function Sidebar() {
       <div className="space-y-3 border-t p-4">
         <div className="rounded-lg border bg-background/60 p-3">
           <div className="mb-1.5 flex items-center justify-between text-xs">
-            <span className="font-medium text-muted-foreground">AI mode</span>
+            <span className="font-medium text-muted-foreground">Mode</span>
             {mockMode ? (
               <Badge variant="info">Mock</Badge>
             ) : (

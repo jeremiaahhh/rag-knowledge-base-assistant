@@ -6,7 +6,7 @@ answers grounded in your own knowledge base — with numbered source
 citations that link back to the exact passages used.
 
 The stack runs end-to-end **without an API key** thanks to a built-in mock
-AI provider. Set `USE_MOCK_AI=false` and provide an `OPENAI_API_KEY` to
+LLM provider. Set `USE_MOCK_AI=false` and provide an `OPENAI_API_KEY` to
 switch to OpenAI for real model answers; nothing else changes.
 
 <p>
@@ -56,7 +56,7 @@ What's covered end-to-end:
 - **Surface** — sidebar dashboard with light/dark mode, drag-and-drop upload,
   chat with a live source-citation panel.
 
-Mock-AI mode is a deliberate design choice: retrieval, citations, and the
+Mock mode is a deliberate design choice: retrieval, citations, and the
 UI all work without external dependencies, so the project clones cleanly
 and runs with a single command.
 

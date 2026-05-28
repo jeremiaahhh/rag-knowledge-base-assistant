@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     "FastAPI",
     "Next.js",
     "Vector search",
-    "AI assistant",
+    "RAG assistant",
   ],
   openGraph: {
     title: "RAG Knowledge Base Assistant",
